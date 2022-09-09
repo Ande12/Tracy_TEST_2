@@ -1,0 +1,84 @@
+header{
+    background-image: url(../images/bg-hero-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: $header_width;
+    height: $header_height;
+    max-width: $header_max-width;
+    margin-left: $header_margin-left;
+    margin-top: $header_margin-top;
+    margin-bottom: 150px;
+
+    nav{
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li{
+                list-style-type: none;
+                button{
+                    font-family: $button_font-family;
+                    font-size: 13px;
+                    padding: $button_padding;
+                    box-shadow:0px 1px 2px $color_grayish_blue;
+                    border-radius:$button_border-radius;
+                    color: $color_grayish_blue;
+                    outline: none;
+                    border: none;
+
+                    &:hover{
+                        background-color: $primary_pink;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .banner{
+        margin-top: 50px;
+        display: flex;
+        column-gap: 5%;
+        
+        .banner_right{
+            width: 40%;
+
+            h1{
+                font-weight: $headings_font_weight;
+                color: $color_dark_cyan;
+                font-family: $headings_font_family;
+                font-size: 35px;
+                line-height: 50px;
+                padding-top: 100px;
+            }
+            p{
+                font-size: $body_font_size;
+                color: $color_grayish_blue;
+                padding-top: 15px;
+                padding-bottom: 35px;
+            }
+            button{
+                font-family: $button_font-family;
+                font-size: 13px;
+                padding: $button_padding;
+                box-shadow:0px 1px 2px $color_grayish_blue;
+                border-radius:$button_border-radius;
+                color: $color_grayish_blue;
+                outline: none;
+                border: none;
+
+                &:hover{
+                    background-color: $primary_pink;
+                    color: white;
+                }
+            }
+        }
+
+        .banner_left{
+            
+            img{
+                width: 700px;
+                height: 400px;
+            }
+        }
+    }
+}
